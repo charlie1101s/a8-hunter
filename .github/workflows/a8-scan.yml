@@ -1,0 +1,55 @@
+name: A8 Hunter daily scan
+
+on:
+  schedule:
+    # 台股：週一到週五 15:10（台北時間）= 07:10 UTC
+    - cron: "10 7 * * 1-5"
+    # 美股：美東收盤後，台北時間隔天 06:20 = 22:20 UTC
+    - cron: "20 22 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      market:
+        description: "tw / us / all"
+        default: "all"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: a8-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run scan
+        env:
+          # 以下三個都是選用：不設定就只更新網頁、不推播
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PAGE_URL: ${{ vars.PAGE_URL }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python a8_scanner.py "${{ github.event.inputs.market }}"
+          elif [ "${{ github.event.schedule }}" = "10 7 * * 1-5" ]; then
+            python a8_scanner.py tw --require-today
+          else
+            python a8_scanner.py us --require-today
+          fi
+      - name: Publish page
+        if: always()
+        run: |
+          git config user.name "a8-bot"
+          git config user.email "a8-bot@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet && exit 0
+          git commit -m "scan $(date -u +%F_%H%M)"
+          git push
