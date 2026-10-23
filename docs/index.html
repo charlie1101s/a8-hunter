@@ -1,0 +1,185 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A8 Hunter 掃描</title><style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1d1d1b;--mute:#6b6a64;--line:#e4e2db;
+--gold:#b8860b;--gold-bg:#fff4d6;--red:#b42318;--red-bg:#fdecea;--blue:#1f5fbf;--chip:#efeee8}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121211;--card:#1c1c1a;
+--ink:#ecebe6;--mute:#9a988f;--line:#2e2d2a;--gold:#f0c24b;--gold-bg:#3a2f10;--red:#ff8a80;
+--red-bg:#3b1715;--blue:#8ab4ff;--chip:#272724}}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,"PingFang TC","Noto Sans TC",
+"Microsoft JhengHei",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:22px;margin:0 0 2px;letter-spacing:.02em}
+.sub{color:var(--mute);font-size:13px;margin:0 0 18px}
+.tabs{display:flex;gap:6px;margin:0 0 16px}
+.tab{flex:1;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;
+padding:10px 8px;font:inherit;font-weight:600;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tab .n{font-weight:500;opacity:.75;font-size:12px;display:block}
+.meta{color:var(--mute);font-size:12.5px;margin:0 0 14px}
+.warn{background:var(--red-bg);color:var(--red);border-radius:10px;padding:10px 12px;font-size:13px;margin:0 0 14px}
+h2{font-size:15px;margin:22px 0 10px}
+h2 small{color:var(--mute);font-weight:500;font-size:12.5px;margin-left:6px}
+.cards{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--gold-bg);border:1px solid var(--gold);border-radius:12px;padding:12px 14px}
+.card .t{font-weight:700;font-size:16px}.card .t span{font-weight:500;color:var(--mute);font-size:13px;margin-left:6px}
+.card .px{font-size:22px;font-weight:700;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+.card .d{font-size:12.5px;color:var(--mute);font-variant-numeric:tabular-nums}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--mute);font-size:13.5px}
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.row{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:10px 14px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row .nm{font-weight:600}.row .nm span{color:var(--mute);font-weight:400;font-size:13px;margin-left:6px}
+.row .rt{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.row .s{grid-column:1/-1;color:var(--mute);font-size:12.5px;font-variant-numeric:tabular-nums}
+.bar{grid-column:1/-1;height:4px;background:var(--chip);border-radius:2px;position:relative;margin:4px 0 2px}
+.bar i{position:absolute;top:0;bottom:0;left:0;border-radius:2px;background:var(--mute)}
+.bar b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--gold)}
+.in .bar i{background:var(--red)}
+.chip{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;margin-left:6px;vertical-align:1px}
+.c-a8{background:var(--gold);color:#1d1d1b}.c-zone{background:var(--red-bg);color:var(--red)}
+.c-floor{background:var(--red);color:#fff}
+.dn{color:var(--red)}
+details{margin-top:22px;color:var(--mute);font-size:13px}
+details summary{cursor:pointer;font-weight:600;color:var(--ink)}
+details li{margin:3px 0}
+.foot{margin-top:28px;color:var(--mute);font-size:12px}
+</style></head><body><div class="wrap">
+<h1>A8 Hunter 每日掃描</h1>
+<p class="sub">日線 · 收盤低於 0.7×EMA365，且出現放量大實體陽線（RSI&lt;60、上影線短）</p>
+<div class="tabs"><button class="tab" data-k="tw">台股50<span class="n">今日 A8：0 檔</span></button><button class="tab" data-k="us">SPY 前50<span class="n">今日 A8：0 檔</span></button></div>
+<section class="pane" data-k="tw"><p class="meta">K線日期 2026-10-22　·　掃描時間 2026-10-23 14:19（台北）　·　52/52 檔有資料</p>
+<h2>今日 A8 訊號 <small>0 檔</small></h2>
+<div class="empty">最新一根日K沒有任何一檔出現 A8。</div>
+<h2>近 20 個交易日出現過 A8 <small>0 檔</small></h2>
+<div class="empty">近期沒有 A8 訊號。</div>
+<h2>距離進場區 <small>獵殺區內 0 檔</small></h2>
+<div class="tbl">
+<div class="row"><div class="nm">1216<span>統一</span></div><div class="rt">距上緣還要跌 33.0%</div><div class="bar"><i style="width:60.5%"></i><b style="left:22.2%"></b></div><div class="s">收 79.60　上緣 53.34　鐵底 38.10　RSI 66.8</div></div>
+<div class="row"><div class="nm">2382<span>廣達</span></div><div class="rt">距上緣還要跌 33.6%</div><div class="bar"><i style="width:61.6%"></i><b style="left:22.2%"></b></div><div class="s">收 322.00　上緣 213.70　鐵底 152.64　RSI 44.7</div></div>
+<div class="row"><div class="nm">2317<span>鴻海</span></div><div class="rt">距上緣還要跌 36.1%</div><div class="bar"><i style="width:66.2%"></i><b style="left:22.2%"></b></div><div class="s">收 245.00　上緣 156.50　鐵底 111.79　RSI 47.3</div></div>
+<div class="row"><div class="nm">2345<span>智邦</span></div><div class="rt">距上緣還要跌 36.9%</div><div class="bar"><i style="width:67.7%"></i><b style="left:22.2%"></b></div><div class="s">收 1,775.00　上緣 1,120.49　鐵底 800.35　RSI 37.4</div></div>
+<div class="row"><div class="nm">2308<span>台達電</span></div><div class="rt">距上緣還要跌 38.5%</div><div class="bar"><i style="width:70.9%"></i><b style="left:22.2%"></b></div><div class="s">收 1,560.00　上緣 959.83　鐵底 685.60　RSI 33.8</div></div>
+<div class="row"><div class="nm">3665<span>貿聯-KY</span></div><div class="rt">距上緣還要跌 38.5%</div><div class="bar"><i style="width:70.9%"></i><b style="left:22.2%"></b></div><div class="s">收 1,875.00　上緣 1,153.16　鐵底 823.69　RSI 33.3</div></div>
+<div class="row"><div class="nm">2449<span>京元電子</span></div><div class="rt">距上緣還要跌 39.6%</div><div class="bar"><i style="width:73.3%"></i><b style="left:22.2%"></b></div><div class="s">收 262.50　上緣 158.51　鐵底 113.22　RSI 42.0</div></div>
+<div class="row"><div class="nm">2376<span>技嘉</span></div><div class="rt">距上緣還要跌 39.7%</div><div class="bar"><i style="width:73.5%"></i><b style="left:22.2%"></b></div><div class="s">收 349.00　上緣 210.39　鐵底 150.28　RSI 44.3</div></div>
+<div class="row"><div class="nm">2412<span>中華電</span></div><div class="rt">距上緣還要跌 39.9%</div><div class="bar"><i style="width:73.8%"></i><b style="left:22.2%"></b></div><div class="s">收 158.00　上緣 95.01　鐵底 67.87　RSI 87.2</div></div>
+<div class="row"><div class="nm">5880<span>合庫金</span></div><div class="rt">距上緣還要跌 39.9%</div><div class="bar"><i style="width:73.8%"></i><b style="left:22.2%"></b></div><div class="s">收 28.20　上緣 16.96　鐵底 12.11　RSI 66.0</div></div>
+<div class="row"><div class="nm">3045<span>台灣大</span></div><div class="rt">距上緣還要跌 40.6%</div><div class="bar"><i style="width:75.3%"></i><b style="left:22.2%"></b></div><div class="s">收 133.00　上緣 79.03　鐵底 56.45　RSI 76.2</div></div>
+<div class="row"><div class="nm">4904<span>遠傳</span></div><div class="rt">距上緣還要跌 41.7%</div><div class="bar"><i style="width:77.8%"></i><b style="left:22.2%"></b></div><div class="s">收 115.00　上緣 67.05　鐵底 47.89　RSI 73.7</div></div>
+<div class="row"><div class="nm">3034<span>聯詠</span></div><div class="rt">距上緣還要跌 42.4%</div><div class="bar"><i style="width:79.4%"></i><b style="left:22.2%"></b></div><div class="s">收 583.00　上緣 336.02　鐵底 240.02　RSI 61.6</div></div>
+<div class="row"><div class="nm">2327<span>國巨</span></div><div class="rt">距上緣還要跌 42.7%</div><div class="bar"><i style="width:80.2%"></i><b style="left:22.2%"></b></div><div class="s">收 507.00　上緣 290.46　鐵底 207.47　RSI 37.6</div></div>
+<div class="row"><div class="nm">6669<span>緯穎</span></div><div class="rt">距上緣還要跌 42.8%</div><div class="bar"><i style="width:80.4%"></i><b style="left:22.2%"></b></div><div class="s">收 1,840.00　上緣 1,052.44　鐵底 751.74　RSI 33.7</div></div>
+<div class="row"><div class="nm">4938<span>和碩</span></div><div class="rt">距上緣還要跌 43.3%</div><div class="bar"><i style="width:81.7%"></i><b style="left:22.2%"></b></div><div class="s">收 103.50　上緣 58.66　鐵底 41.90　RSI 67.5</div></div>
+<div class="row"><div class="nm">2603<span>長榮</span></div><div class="rt">距上緣還要跌 43.7%</div><div class="bar"><i style="width:82.6%"></i><b style="left:22.2%"></b></div><div class="s">收 260.00　上緣 146.42　鐵底 104.58　RSI 61.6</div></div>
+<div class="row"><div class="nm">2886<span>兆豐金</span></div><div class="rt">距上緣還要跌 44.9%</div><div class="bar"><i style="width:85.6%"></i><b style="left:22.2%"></b></div><div class="s">收 55.20　上緣 30.41　鐵底 21.72　RSI 72.6</div></div>
+<div class="row"><div class="nm">2330<span>台積電</span></div><div class="rt">距上緣還要跌 45.2%</div><div class="bar"><i style="width:86.3%"></i><b style="left:22.2%"></b></div><div class="s">收 2,385.00　上緣 1,307.31　鐵底 933.79　RSI 37.8</div></div>
+<div class="row"><div class="nm">3231<span>緯創</span></div><div class="rt">距上緣還要跌 45.8%</div><div class="bar"><i style="width:88.0%"></i><b style="left:22.2%"></b></div><div class="s">收 190.00　上緣 102.96　鐵底 73.54　RSI 53.9</div></div>
+<div class="row"><div class="nm">2301<span>光寶科</span></div><div class="rt">距上緣還要跌 47.2%</div><div class="bar"><i style="width:91.8%"></i><b style="left:22.2%"></b></div><div class="s">收 255.50　上緣 134.86　鐵底 96.33　RSI 35.6</div></div>
+<div class="row"><div class="nm">2357<span>華碩</span></div><div class="rt">距上緣還要跌 47.5%</div><div class="bar"><i style="width:92.7%"></i><b style="left:22.2%"></b></div><div class="s">收 946.00　上緣 496.23　鐵底 354.45　RSI 45.1</div></div>
+<div class="row"><div class="nm">2368<span>金像電</span></div><div class="rt">距上緣還要跌 48.2%</div><div class="bar"><i style="width:94.7%"></i><b style="left:22.2%"></b></div><div class="s">收 1,115.00　上緣 577.13　鐵底 412.24　RSI 46.6</div></div>
+<div class="row"><div class="nm">2892<span>第一金</span></div><div class="rt">距上緣還要跌 48.3%</div><div class="bar"><i style="width:94.9%"></i><b style="left:22.2%"></b></div><div class="s">收 42.35　上緣 21.90　鐵底 15.64　RSI 71.8</div></div>
+<div class="row"><div class="nm">2882<span>國泰金</span></div><div class="rt">距上緣還要跌 48.5%</div><div class="bar"><i style="width:95.4%"></i><b style="left:22.2%"></b></div><div class="s">收 113.50　上緣 58.50　鐵底 41.78　RSI 54.0</div></div>
+<div class="row"><div class="nm">2360<span>致茂</span></div><div class="rt">距上緣還要跌 48.5%</div><div class="bar"><i style="width:95.4%"></i><b style="left:22.2%"></b></div><div class="s">收 1,980.00　上緣 1,020.28　鐵底 728.77　RSI 39.8</div></div>
+<div class="row"><div class="nm">2303<span>聯電</span></div><div class="rt">距上緣還要跌 48.8%</div><div class="bar"><i style="width:96.3%"></i><b style="left:22.2%"></b></div><div class="s">收 125.50　上緣 64.27　鐵底 45.91　RSI 32.7</div></div>
+<div class="row"><div class="nm">2891<span>中信金</span></div><div class="rt">距上緣還要跌 48.9%</div><div class="bar"><i style="width:96.6%"></i><b style="left:22.2%"></b></div><div class="s">收 74.90　上緣 38.30　鐵底 27.35　RSI 67.2</div></div>
+<div class="row"><div class="nm">2344<span>華邦電</span></div><div class="rt">距上緣還要跌 50.6%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 154.50　上緣 76.33　鐵底 54.52　RSI 40.0</div></div>
+<div class="row"><div class="nm">2884<span>玉山金</span></div><div class="rt">距上緣還要跌 50.9%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 49.75　上緣 24.41　鐵底 17.44　RSI 71.4</div></div>
+<div class="row"><div class="nm">2890<span>永豐金</span></div><div class="rt">距上緣還要跌 51.4%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 46.35　上緣 22.54　鐵底 16.10　RSI 61.0</div></div>
+<div class="row"><div class="nm">2880<span>華南金</span></div><div class="rt">距上緣還要跌 51.5%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 50.30　上緣 24.38　鐵底 17.42　RSI 67.0</div></div>
+<div class="row"><div class="nm">6446<span>藥華藥</span></div><div class="rt">距上緣還要跌 51.7%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 1,160.00　上緣 560.64　鐵底 400.46　RSI 43.5</div></div>
+<div class="row"><div class="nm">2395<span>研華</span></div><div class="rt">距上緣還要跌 51.8%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 670.00　上緣 322.92　鐵底 230.65　RSI 39.0</div></div>
+<div class="row"><div class="nm">2454<span>聯發科</span></div><div class="rt">距上緣還要跌 51.8%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 4,010.00　上緣 1,931.22　鐵底 1,379.45　RSI 33.9</div></div>
+<div class="row"><div class="nm">2881<span>富邦金</span></div><div class="rt">距上緣還要跌 52.0%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 158.50　上緣 76.03　鐵底 54.31　RSI 58.6</div></div>
+<div class="row"><div class="nm">2885<span>元大金</span></div><div class="rt">距上緣還要跌 52.2%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 72.40　上緣 34.59　鐵底 24.71　RSI 60.4</div></div>
+<div class="row"><div class="nm">2408<span>南亞科</span></div><div class="rt">距上緣還要跌 52.4%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 414.00　上緣 197.04　鐵底 140.74　RSI 33.7</div></div>
+<div class="row"><div class="nm">2383<span>台光電</span></div><div class="rt">距上緣還要跌 54.6%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 5,070.00　上緣 2,302.34　鐵底 1,644.53　RSI 44.2</div></div>
+<div class="row"><div class="nm">2887<span>台新新光金</span></div><div class="rt">距上緣還要跌 54.7%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 42.10　上緣 19.06　鐵底 13.62　RSI 52.4</div></div>
+<div class="row"><div class="nm">3711<span>日月光投控</span></div><div class="rt">距上緣還要跌 54.9%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 654.00　上緣 294.96　鐵底 210.69　RSI 44.0</div></div>
+<div class="row"><div class="nm">3017<span>奇鋐</span></div><div class="rt">距上緣還要跌 55.1%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 3,145.00　上緣 1,412.25　鐵底 1,008.75　RSI 43.2</div></div>
+<div class="row"><div class="nm">2883<span>凱基金</span></div><div class="rt">距上緣還要跌 55.2%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 37.75　上緣 16.93　鐵底 12.09　RSI 50.5</div></div>
+<div class="row"><div class="nm">2059<span>川湖</span></div><div class="rt">距上緣還要跌 56.6%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 9,755.00　上緣 4,238.23　鐵底 3,027.31　RSI 33.3</div></div>
+<div class="row"><div class="nm">3008<span>大立光</span></div><div class="rt">距上緣還要跌 58.1%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 6,175.00　上緣 2,587.50　鐵底 1,848.21　RSI 46.0</div></div>
+<div class="row"><div class="nm">6505<span>台塑化</span></div><div class="rt">距上緣還要跌 59.3%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 106.50　上緣 43.34　鐵底 30.95　RSI 54.8</div></div>
+<div class="row"><div class="nm">3653<span>健策</span></div><div class="rt">距上緣還要跌 59.3%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 6,070.00　上緣 2,468.60　鐵底 1,763.28　RSI 42.9</div></div>
+<div class="row"><div class="nm">4958<span>臻鼎-KY</span></div><div class="rt">距上緣還要跌 59.5%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 567.00　上緣 229.77　鐵底 164.12　RSI 56.7</div></div>
+<div class="row"><div class="nm">3037<span>欣興</span></div><div class="rt">距上緣還要跌 60.1%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 1,085.00　上緣 432.40　鐵底 308.86　RSI 45.8</div></div>
+<div class="row"><div class="nm">8046<span>南電</span></div><div class="rt">距上緣還要跌 61.5%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 1,265.00　上緣 487.27　鐵底 348.05　RSI 45.5</div></div>
+<div class="row"><div class="nm">3443<span>創意</span></div><div class="rt">距上緣還要跌 65.8%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 7,585.00　上緣 2,591.62　鐵底 1,851.15　RSI 50.7</div></div>
+<div class="row"><div class="nm">1303<span>南亞</span></div><div class="rt">距上緣還要跌 71.5%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 301.00　上緣 85.91　鐵底 61.37　RSI 56.6</div></div>
+</div></section><section class="pane" data-k="us"><p class="meta">K線日期 2026-10-22　·　掃描時間 2026-10-23 14:19（台北）　·　50/50 檔有資料</p>
+<h2>今日 A8 訊號 <small>0 檔</small></h2>
+<div class="empty">最新一根日K沒有任何一檔出現 A8。</div>
+<h2>近 20 個交易日出現過 A8 <small>0 檔</small></h2>
+<div class="empty">近期沒有 A8 訊號。</div>
+<h2>距離進場區 <small>獵殺區內 0 檔</small></h2>
+<div class="tbl">
+<div class="row"><div class="nm">ORCL<span>Oracle Corp</span></div><div class="rt">距上緣還要跌 5.5%</div><div class="bar"><i style="width:26.8%"></i><b style="left:22.2%"></b></div><div class="s">收 125.54　上緣 118.62　鐵底 84.73　RSI 38.4</div></div>
+<div class="row"><div class="nm">NFLX<span>Netflix Inc</span></div><div class="rt">距上緣還要跌 9.8%</div><div class="bar"><i style="width:30.6%"></i><b style="left:22.2%"></b></div><div class="s">收 67.05　上緣 60.50　鐵底 43.21　RSI 39.6</div></div>
+<div class="row"><div class="nm">HD<span>Home Depot Inc</span></div><div class="rt">距上緣還要跌 26.6%</div><div class="bar"><i style="width:50.4%"></i><b style="left:22.2%"></b></div><div class="s">收 327.73　上緣 240.58　鐵底 171.85　RSI 71.5</div></div>
+<div class="row"><div class="nm">AVGO<span>Broadcom Inc</span></div><div class="rt">距上緣還要跌 27.8%</div><div class="bar"><i style="width:52.2%"></i><b style="left:22.2%"></b></div><div class="s">收 323.24　上緣 233.36　鐵底 166.68　RSI 34.8</div></div>
+<div class="row"><div class="nm">BAC<span>Bank Of America Corp</span></div><div class="rt">距上緣還要跌 27.8%</div><div class="bar"><i style="width:52.2%"></i><b style="left:22.2%"></b></div><div class="s">收 51.08　上緣 36.86　鐵底 26.33　RSI 28.2</div></div>
+<div class="row"><div class="nm">GE<span>General Electric</span></div><div class="rt">距上緣還要跌 29.5%</div><div class="bar"><i style="width:54.8%"></i><b style="left:22.2%"></b></div><div class="s">收 293.54　上緣 206.86　鐵底 147.76　RSI 30.2</div></div>
+<div class="row"><div class="nm">LRCX<span>Lam Research Corp</span></div><div class="rt">距上緣還要跌 29.6%</div><div class="bar"><i style="width:55.0%"></i><b style="left:22.2%"></b></div><div class="s">收 230.15　上緣 161.92　鐵底 115.66　RSI 24.6</div></div>
+<div class="row"><div class="nm">AMAT<span>Applied Materials Inc</span></div><div class="rt">距上緣還要跌 30.9%</div><div class="bar"><i style="width:57.0%"></i><b style="left:22.2%"></b></div><div class="s">收 375.58　上緣 259.61　鐵底 185.43　RSI 25.4</div></div>
+<div class="row"><div class="nm">IBM<span>Intl Business Machines C</span></div><div class="rt">距上緣還要跌 31.0%</div><div class="bar"><i style="width:57.2%"></i><b style="left:22.2%"></b></div><div class="s">收 252.11　上緣 173.86　鐵底 124.19　RSI 70.3</div></div>
+<div class="row"><div class="nm">TSLA<span>Tesla Inc</span></div><div class="rt">距上緣還要跌 31.1%</div><div class="bar"><i style="width:57.4%"></i><b style="left:22.2%"></b></div><div class="s">收 374.58　上緣 258.02　鐵底 184.30　RSI 52.8</div></div>
+<div class="row"><div class="nm">CAT<span>Caterpillar Inc</span></div><div class="rt">距上緣還要跌 31.6%</div><div class="bar"><i style="width:58.2%"></i><b style="left:22.2%"></b></div><div class="s">收 704.05　上緣 481.46　鐵底 343.90　RSI 29.2</div></div>
+<div class="row"><div class="nm">WFC<span>Wells Fargo + Co</span></div><div class="rt">距上緣還要跌 31.7%</div><div class="bar"><i style="width:58.3%"></i><b style="left:22.2%"></b></div><div class="s">收 83.01　上緣 56.70　鐵底 40.50　RSI 50.0</div></div>
+<div class="row"><div class="nm">META<span>Meta Platforms Inc Class</span></div><div class="rt">距上緣還要跌 31.9%</div><div class="bar"><i style="width:58.6%"></i><b style="left:22.2%"></b></div><div class="s">收 648.85　上緣 442.12　鐵底 315.80　RSI 36.8</div></div>
+<div class="row"><div class="nm">GS<span>Goldman Sachs Group Inc</span></div><div class="rt">距上緣還要跌 32.1%</div><div class="bar"><i style="width:59.0%"></i><b style="left:22.2%"></b></div><div class="s">收 891.30　上緣 605.32　鐵底 432.37　RSI 41.6</div></div>
+<div class="row"><div class="nm">MS<span>Morgan Stanley</span></div><div class="rt">距上緣還要跌 32.5%</div><div class="bar"><i style="width:59.6%"></i><b style="left:22.2%"></b></div><div class="s">收 183.97　上緣 124.24　鐵底 88.74　RSI 38.9</div></div>
+<div class="row"><div class="nm">GEV<span>Ge Vernova Inc</span></div><div class="rt">距上緣還要跌 33.2%</div><div class="bar"><i style="width:60.9%"></i><b style="left:22.2%"></b></div><div class="s">收 827.42　上緣 552.53　鐵底 394.66　RSI 31.1</div></div>
+<div class="row"><div class="nm">AMZN<span>Amazon.Com Inc</span></div><div class="rt">距上緣還要跌 34.5%</div><div class="bar"><i style="width:63.1%"></i><b style="left:22.2%"></b></div><div class="s">收 250.38　上緣 164.06　鐵底 117.19　RSI 45.1</div></div>
+<div class="row"><div class="nm">LIN<span>Linde Plc</span></div><div class="rt">距上緣還要跌 34.8%</div><div class="bar"><i style="width:63.7%"></i><b style="left:22.2%"></b></div><div class="s">收 510.36　上緣 332.91　鐵底 237.79　RSI 72.9</div></div>
+<div class="row"><div class="nm">GOOG<span>Alphabet Inc Cl C</span></div><div class="rt">距上緣還要跌 34.8%</div><div class="bar"><i style="width:63.7%"></i><b style="left:22.2%"></b></div><div class="s">收 320.76　上緣 209.19　鐵底 149.42　RSI 32.8</div></div>
+<div class="row"><div class="nm">COST<span>Costco Wholesale Corp</span></div><div class="rt">距上緣還要跌 35.2%</div><div class="bar"><i style="width:64.5%"></i><b style="left:22.2%"></b></div><div class="s">收 1,018.21　上緣 659.81　鐵底 471.29　RSI 78.7</div></div>
+<div class="row"><div class="nm">GOOGL<span>Alphabet Inc Cl A</span></div><div class="rt">距上緣還要跌 35.2%</div><div class="bar"><i style="width:64.6%"></i><b style="left:22.2%"></b></div><div class="s">收 324.22　上緣 209.95　鐵底 149.97　RSI 33.5</div></div>
+<div class="row"><div class="nm">RTX<span>Rtx Corp</span></div><div class="rt">距上緣還要跌 36.0%</div><div class="bar"><i style="width:66.0%"></i><b style="left:22.2%"></b></div><div class="s">收 194.71　上緣 124.57　鐵底 88.98　RSI 56.6</div></div>
+<div class="row"><div class="nm">JPM<span>Jpmorgan Chase + Co</span></div><div class="rt">距上緣還要跌 36.1%</div><div class="bar"><i style="width:66.1%"></i><b style="left:22.2%"></b></div><div class="s">收 336.54　上緣 215.15　鐵底 153.68　RSI 47.6</div></div>
+<div class="row"><div class="nm">PG<span>Procter + Gamble Co/The</span></div><div class="rt">距上緣還要跌 36.1%</div><div class="bar"><i style="width:66.2%"></i><b style="left:22.2%"></b></div><div class="s">收 165.59　上緣 105.78　鐵底 75.56　RSI 74.5</div></div>
+<div class="row"><div class="nm">UNH<span>Unitedhealth Group Inc</span></div><div class="rt">距上緣還要跌 37.1%</div><div class="bar"><i style="width:68.1%"></i><b style="left:22.2%"></b></div><div class="s">收 424.98　上緣 267.33　鐵底 190.95　RSI 72.2</div></div>
+<div class="row"><div class="nm">WMT<span>Walmart Inc</span></div><div class="rt">距上緣還要跌 37.1%</div><div class="bar"><i style="width:68.1%"></i><b style="left:22.2%"></b></div><div class="s">收 121.12　上緣 76.16　鐵底 54.40　RSI 74.4</div></div>
+<div class="row"><div class="nm">BRK-B<span>Berkshire Hathaway Inc C</span></div><div class="rt">距上緣還要跌 37.3%</div><div class="bar"><i style="width:68.6%"></i><b style="left:22.2%"></b></div><div class="s">收 546.97　上緣 342.69　鐵底 244.78　RSI 81.5</div></div>
+<div class="row"><div class="nm">NVDA<span>Nvidia Corp</span></div><div class="rt">距上緣還要跌 38.1%</div><div class="bar"><i style="width:70.1%"></i><b style="left:22.2%"></b></div><div class="s">收 212.21　上緣 131.34　鐵底 93.81　RSI 39.1</div></div>
+<div class="row"><div class="nm">CSCO<span>Cisco Systems Inc</span></div><div class="rt">距上緣還要跌 39.3%</div><div class="bar"><i style="width:72.6%"></i><b style="left:22.2%"></b></div><div class="s">收 104.89　上緣 63.63　鐵底 45.45　RSI 37.5</div></div>
+<div class="row"><div class="nm">MSFT<span>Microsoft Corp</span></div><div class="rt">距上緣還要跌 39.5%</div><div class="bar"><i style="width:72.9%"></i><b style="left:22.2%"></b></div><div class="s">收 521.08　上緣 315.42　鐵底 225.30　RSI 50.5</div></div>
+<div class="row"><div class="nm">MA<span>Mastercard Inc   A</span></div><div class="rt">距上緣還要跌 40.4%</div><div class="bar"><i style="width:74.9%"></i><b style="left:22.2%"></b></div><div class="s">收 633.21　上緣 377.52　鐵底 269.66　RSI 79.5</div></div>
+<div class="row"><div class="nm">PM<span>Philip Morris Internatio</span></div><div class="rt">距上緣還要跌 40.6%</div><div class="bar"><i style="width:75.3%"></i><b style="left:22.2%"></b></div><div class="s">收 201.74　上緣 119.92　鐵底 85.65　RSI 57.3</div></div>
+<div class="row"><div class="nm">TXN<span>Texas Instruments Inc</span></div><div class="rt">距上緣還要跌 40.6%</div><div class="bar"><i style="width:75.4%"></i><b style="left:22.2%"></b></div><div class="s">收 279.50　上緣 165.95　鐵底 118.54　RSI 50.4</div></div>
+<div class="row"><div class="nm">JNJ<span>Johnson + Johnson</span></div><div class="rt">距上緣還要跌 41.5%</div><div class="bar"><i style="width:77.4%"></i><b style="left:22.2%"></b></div><div class="s">收 267.61　上緣 156.52　鐵底 111.80　RSI 57.2</div></div>
+<div class="row"><div class="nm">INTC<span>Intel Corp</span></div><div class="rt">距上緣還要跌 41.8%</div><div class="bar"><i style="width:78.2%"></i><b style="left:22.2%"></b></div><div class="s">收 85.49　上緣 49.73　鐵底 35.52　RSI 30.5</div></div>
+<div class="row"><div class="nm">V<span>Visa Inc Class A Shares</span></div><div class="rt">距上緣還要跌 42.5%</div><div class="bar"><i style="width:79.7%"></i><b style="left:22.2%"></b></div><div class="s">收 414.34　上緣 238.18　鐵底 170.13　RSI 79.1</div></div>
+<div class="row"><div class="nm">KO<span>Coca Cola Co/The</span></div><div class="rt">距上緣還要跌 42.7%</div><div class="bar"><i style="width:80.2%"></i><b style="left:22.2%"></b></div><div class="s">收 95.34　上緣 54.62　鐵底 39.01　RSI 73.6</div></div>
+<div class="row"><div class="nm">TMO<span>Thermo Fisher Scientific</span></div><div class="rt">距上緣還要跌 43.2%</div><div class="bar"><i style="width:81.5%"></i><b style="left:22.2%"></b></div><div class="s">收 676.54　上緣 384.00　鐵底 274.29　RSI 55.0</div></div>
+<div class="row"><div class="nm">AAPL<span>Apple Inc</span></div><div class="rt">距上緣還要跌 44.0%</div><div class="bar"><i style="width:83.2%"></i><b style="left:22.2%"></b></div><div class="s">收 348.22　上緣 195.17　鐵底 139.41　RSI 64.8</div></div>
+<div class="row"><div class="nm">MRK<span>Merck + Co. Inc.</span></div><div class="rt">距上緣還要跌 44.1%</div><div class="bar"><i style="width:83.5%"></i><b style="left:22.2%"></b></div><div class="s">收 147.24　上緣 82.36　鐵底 58.83　RSI 52.9</div></div>
+<div class="row"><div class="nm">ABBV<span>Abbvie Inc</span></div><div class="rt">距上緣還要跌 44.2%</div><div class="bar"><i style="width:83.8%"></i><b style="left:22.2%"></b></div><div class="s">收 285.19　上緣 159.21　鐵底 113.72　RSI 64.7</div></div>
+<div class="row"><div class="nm">CVX<span>Chevron Corp</span></div><div class="rt">距上緣還要跌 44.3%</div><div class="bar"><i style="width:84.2%"></i><b style="left:22.2%"></b></div><div class="s">收 226.68　上緣 126.17　鐵底 90.12　RSI 71.5</div></div>
+<div class="row"><div class="nm">XOM<span>Exxonmobil Holdings Corp</span></div><div class="rt">距上緣還要跌 44.7%</div><div class="bar"><i style="width:85.1%"></i><b style="left:22.2%"></b></div><div class="s">收 178.23　上緣 98.54　鐵底 70.38　RSI 70.3</div></div>
+<div class="row"><div class="nm">AMGN<span>Amgen Inc</span></div><div class="rt">距上緣還要跌 44.9%</div><div class="bar"><i style="width:85.6%"></i><b style="left:22.2%"></b></div><div class="s">收 447.28　上緣 246.40　鐵底 176.00　RSI 66.6</div></div>
+<div class="row"><div class="nm">LLY<span>Eli Lilly + Co</span></div><div class="rt">距上緣還要跌 45.7%</div><div class="bar"><i style="width:87.7%"></i><b style="left:22.2%"></b></div><div class="s">收 1,306.69　上緣 709.42　鐵底 506.73　RSI 70.7</div></div>
+<div class="row"><div class="nm">PLTR<span>Palantir Technologies In</span></div><div class="rt">距上緣還要跌 48.1%</div><div class="bar"><i style="width:94.4%"></i><b style="left:22.2%"></b></div><div class="s">收 196.19　上緣 101.76　鐵底 72.69　RSI 54.0</div></div>
+<div class="row"><div class="nm">PANW<span>Palo Alto Networks Inc</span></div><div class="rt">距上緣還要跌 49.8%</div><div class="bar"><i style="width:99.4%"></i><b style="left:22.2%"></b></div><div class="s">收 354.92　上緣 178.18　鐵底 127.27　RSI 43.3</div></div>
+<div class="row"><div class="nm">AMD<span>Advanced Micro Devices</span></div><div class="rt">距上緣還要跌 52.0%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 507.93　上緣 243.77　鐵底 174.12　RSI 36.5</div></div>
+<div class="row"><div class="nm">MU<span>Micron Technology Inc</span></div><div class="rt">距上緣還要跌 52.4%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 856.49　上緣 407.94　鐵底 291.38　RSI 34.7</div></div>
+<div class="row"><div class="nm">CRWD<span>Crowdstrike Holdings Inc</span></div><div class="rt">距上緣還要跌 54.6%</div><div class="bar"><i style="width:100.0%"></i><b style="left:22.2%"></b></div><div class="s">收 237.94　上緣 107.97　鐵底 77.12　RSI 45.8</div></div>
+</div></section>
+<details><summary>A8 訊號條件</summary><ul>
+<li>收盤 &lt; EMA(365) × 0.7</li>
+<li>陽線，實體 &gt; 近 20 根平均實體 × 2.0</li>
+<li>成交量 &gt; 近 20 根均量 × 1.5</li>
+<li>上影線 &lt; 實體 × 0.8</li>
+<li>RSI(14) &lt; 60</li></ul>
+<p>進度條：左端是 0.5 鐵底，金色線是 0.7 進場區上緣，紅色代表已在獵殺區內。</p></details>
+<p class="foot">資料來源 Yahoo Finance（除權息不還原）。僅供參考，不構成投資建議。</p>
+</div><script>
+const tabs=[...document.querySelectorAll('.tab')];
+function show(k){tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset.k===k));
+document.querySelectorAll('.pane').forEach(p=>p.hidden=p.dataset.k!==k);
+try{localStorage.setItem('a8tab',k)}catch(e){}}
+tabs.forEach(t=>t.onclick=()=>show(t.dataset.k));
+let k0='tw';try{k0=localStorage.getItem('a8tab')||'tw'}catch(e){}
+if(!document.querySelector('.pane[data-k="'+k0+'"]'))k0=tabs[0]?.dataset.k;show(k0);
+</script></body></html>
